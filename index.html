@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aria Attar - Personal Blog</title>
     <style>
+        * {
+            transition: background-color 0.2s ease;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
-            color: #333;
+            color: #ffffff;
+            background-color: #1a1a1a;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -18,10 +23,14 @@
             margin-bottom: 40px;
         }
         h1 {
-            color: #2c3e50;
+            color: #ffffff;
+            font-weight: normal;
+        }
+        h2 {
+            font-weight: normal;
         }
         .bio {
-            background-color: #f4f4f4;
+            background-color: #2c2c2c;
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 30px;
@@ -31,37 +40,100 @@
             gap: 20px;
         }
         .post {
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             padding: 15px;
             border-radius: 5px;
         }
         footer {
             text-align: center;
             margin-top: 40px;
-            color: #777;
+            color: #ffffff;
+        }
+
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        body.light-mode h1,
+        body.light-mode h2 {
+            color: #000000;
+        }
+        body.light-mode .bio {
+            background-color: #f4f4f4;
+        }
+        body.light-mode .post {
+            border-color: #ddd;
+        }
+        body.light-mode footer {
+            color: #000000;
+        }
+        body.light-mode #theme-toggle {
+            background-color: #f0f0f0;
+            color: #000000;
+        }
+        body.light-mode a {
+            color: #000000;
+        }
+        
+        #theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        body.dark-mode a {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
+    <button id="theme-toggle">Toggle Light Mode</button>
+
     <header>
         <h1>Aria Attar</h1>
-        <p>Co-founder and CEO of TensorStax</p>
+        <p>Co-founder and CEO of <a href="https://tensorstax.com" target="_blank">TensorStax</a></p>
     </header>
 
     <main>
         <section class="bio">
             <h2>About Me</h2>
-            <p>Welcome to my personal blog! I'm Aria Attar, the co-founder and CEO of TensorStax. Here, I share my thoughts on technology, entrepreneurship, and the exciting world of AI and machine learning.</p>
+            <p>Welcome to my personal blog! I'm Aria Attar, the co-founder and CEO of TensorStax. Here, I share my thoughts on random topics including engineering, entreprenurship, politics, and more.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Aria Attar. All rights reserved.</p>
         <p>
-            <a href="https://github.com/yourusername">GitHub</a> |
-            <a href="https://linkedin.com/in/yourusername">LinkedIn</a> |
-            <a href="https://twitter.com/yourusername">Twitter</a>
+            <a href="https://github.com/ariaattar">GitHub</a> |
+            <a href="https://linkedin.com/in/ariaattar">LinkedIn</a> |
+            <a href="https://twitter.com/arattml">Twitter</a>
         </p>
     </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Set initial state to dark mode
+        body.classList.add('dark-mode');
+        themeToggle.textContent = 'Toggle Light Mode';
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.textContent = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+        });
+    </script>
 </body>
 </html>
