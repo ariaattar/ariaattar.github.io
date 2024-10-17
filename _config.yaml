@@ -1,0 +1,11 @@
+title: Aria Attar's Blog
+description: Personal blog of Aria Attar
+url: "https://ariaattar.com"
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
