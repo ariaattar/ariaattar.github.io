@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - Aria Attar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Base styles */
         body {
@@ -87,6 +88,10 @@
         }
 
         /* Markdown content styles */
+        .markdown-content {
+            font-family: 'Inter', sans-serif;
+        }
+
         .markdown-content h1,
         .markdown-content h2,
         .markdown-content h3,
@@ -95,6 +100,7 @@
         .markdown-content h6 {
             margin-top: 1.5em;
             margin-bottom: 0.5em;
+            font-family: 'Inter', sans-serif;
         }
 
         .markdown-content p,
@@ -104,13 +110,14 @@
         }
 
         .markdown-content code {
+            font-family: monospace;
             background-color: #f0f0f0;
             padding: 2px 4px;
             border-radius: 3px;
         }
 
         body.dark-mode .markdown-content code {
-            background-color: #333333;
+            background-color: hsl(0, 0%, 0%);
         }
 
         .markdown-content pre {
