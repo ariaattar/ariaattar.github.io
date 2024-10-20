@@ -103,12 +103,38 @@
     <header>
         <h1>Aria Attar</h1>
         <p>Co-founder and CEO of <a href="https://tensorstax.com" target="_blank">TensorStax</a></p>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a> |
+            <a href="/blog">Blog</a> |
+            <a href="/projects">Projects</a>
+        </nav>
     </header>
 
     <main>
         <section class="bio">
             <h2>About Me</h2>
-            <p>I'm Aria Attar, co-founder and CEO of TensorStax. Here, I share my thoughts on random topics including engineering, entreprenurship, politics, and more.</p>
+            <p>Welcome to my personal blog! I'm Aria Attar, the co-founder and CEO of TensorStax. Here, I share my thoughts on random topics including engineering, entrepreneurship, politics, and more.</p>
+        </section>
+
+        <section class="blog-posts">
+            <h2>Recent Blog Posts</h2>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.date | date: "%B %d, %Y" }}</p>
+                    {% if post.description %}
+                        <p>{{ post.description }}</p>
+                    {% else %}
+                        <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% if site.posts.size > 5 %}
+                <p><a href="/blog">View all posts</a></p>
+            {% endif %}
         </section>
     </main>
 
