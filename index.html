@@ -10,13 +10,14 @@
         }
 
         body {
-            font-family: "Times New Roman", Times, serif;
+            font-family: "Georgia", "Cambria", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
             line-height: 1.6;
             color: #ffffff;
-            background-color: #1a1a1a;
+            background-color: #191919;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            font-weight: 300;
         }
         header {
             text-align: center;
@@ -30,7 +31,7 @@
             font-weight: normal;
         }
         .bio {
-            background-color: #2c2c2c;
+            background-color: #151515;
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 30px;
@@ -40,7 +41,7 @@
             gap: 20px;
         }
         .post {
-            border: 1px solid #000000;
+            border: 1px solid #444;
             padding: 15px;
             border-radius: 5px;
         }
@@ -95,6 +96,9 @@
         body.dark-mode a {
             color: #ffffff;
         }
+        .bio h2 {
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
@@ -104,10 +108,7 @@
         <h1>Aria Attar</h1>
         <p>Co-founder and CEO of <a href="https://tensorstax.com" target="_blank">TensorStax</a></p>
         <nav>
-            <a href="/">Home</a> |
-            <a href="/about">About</a> |
-            <a href="/blog">Blog</a> |
-            <a href="/projects">Projects</a>
+            <a href="/">Home</a>
         </nav>
     </header>
 
@@ -118,7 +119,12 @@
         </section>
 
         <section class="blog-posts">
-            <!-- You can add recent blog posts here if desired -->
+            <!-- <h2>Recent Blog Posts</h2>
+            <div class="post">
+                <h3><a href="/blog/post-1">First Blog Post</a></h3>
+                <p class="post-date">Published on: April 15, 2023</p>
+                <p class="post-excerpt">A brief excerpt or summary.</p>
+            </div> -->
         </section>
     </main>
 
