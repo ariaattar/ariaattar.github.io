@@ -39,8 +39,6 @@ While the models perform well on GSM8K, they exhibit **non-negligible performanc
 | `gpt-4o`          | 63.1                  | ±4.53%                    |
 | `Llama3-8b-instruct` | 18.6               | ±3.86%                    |
 
-All models struggled significantly with the **GSM-NoOp** dataset, which introduced irrelevant information, with `Llama3-8b-instruct` showing the most difficulty.
-
 ---
 
 ### Key Observations
@@ -50,6 +48,8 @@ All models struggled significantly with the **GSM-NoOp** dataset, which introduc
 3. Models struggle significantly with irrelevant information.
 
    > *"As the difficulty increases from GSM-M1 → GSM-Symb → GSM-P1 → GSM-P2, the distribution of performance shifts to the left (i.e., accuracy decreases), and the variance increases."* 
+
+Another relevant paper on this topic: [Large Language Models Struggle to Learn Long-Tail Knowledge](https://arxiv.org/pdf/2211.08411)
 
 ### Implications for Agentic Systems
 
