@@ -1,6 +1,6 @@
 # Vertical vs. General AI Agents: Where is the value?
 
-The next major paradigm shift in technology is clearly shaping up to be autonomous AI systems (Agents), with a growing distinction between general and specialized vertical agents. Here are my thoughts on where I think value will be built—specifically around the commoditization of general agents, the unique value of vertical agents, and the potential of LLM compilers as a competitive moat.
+The next major paradigm shift in technology is clearly shaping up to be autonomous AI systems (Agents), with a growing distinction between general and specialized vertical agents. Here are my thoughts on where I think value will be built—specifically around the commoditization of general agents and the unique value of vertical agents.
 
 ### The Commoditization of General Agents
 
@@ -52,8 +52,6 @@ While the models perform well on GSM8K, they exhibit **non-negligible performanc
 Another relevant paper on this topic: [Large Language Models Struggle to Learn Long-Tail Knowledge](https://arxiv.org/pdf/2211.08411)
 
 ### Implications for Agentic Systems
-
-These findings have significant implications for AI agents:
 
 - Enterprise-specific workflows are often not represented in general-purpose LLM training data.  
 - In-context learning falls short for complex, multi-step tasks.  
