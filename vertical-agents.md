@@ -68,7 +68,7 @@ These challenges, particularly the multiplicative nature of errors in agentic sy
 
 This opens up substantial opportunities for **vertical-specific agents** that are built from the ground up to handle the unique, high-entropy tasks of specific industries or business processes. These specialized agents need to outperform general-purpose agents by **orders of magnitude** to provide true value over general agents.
 
-![Performance Decay Curve](https://i.imgur.com/Lvdzp7W.png)
+<img src="https://i.imgur.com/Lvdzp7W.png" alt="Performance Decay Curve" width="600" height="auto">
 
 ### Solving Vertical Agent Challenges
 
