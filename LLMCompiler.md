@@ -1,5 +1,7 @@
 # Building Reliable AI Agents Requires Compiler Like Systems
 
+![LLM Compiler Backdrop](/assets/llm_compiler_backdrop.svg)
+
 At TensorStax, we’re building autonomous agents that operate in one of the most unforgiving domains out there, data engineering. And reliability isn’t optional here. A hallucinated schema, a broken DAG, or a failed job silently corrupting data? It can break full prod environments. 
 
 What we’ve learned is that the problem isn’t just with the models themselves. It’s about how they interface with the real world. And the most effective thing we’ve built to solve that is something we call the **LLM Compiler**.
