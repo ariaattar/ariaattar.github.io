@@ -24,7 +24,7 @@ Just as critically, it provides clean, interpretable feedback. Did the task exec
 
 Example for running a batch job on AWS:
 
-![Image.png](https://res.craft.do/user/full/6fea9436-3562-861e-492a-03f398d496d1/doc/0086961A-2CAF-45C8-9C71-64653E511015/A2DC7603-2297-4797-9C6E-58E39D10B598_2/1MzlnhCYFfYm9hR0M2Z1K6CkOgslcA2XAMDAXqSdKxcz/Image.png)
+![LLM Compiler](/assets/llm_compiler.svg)
 
 By removing as many unnecessary variables and constraining generations we achieve a few benefits:
 
